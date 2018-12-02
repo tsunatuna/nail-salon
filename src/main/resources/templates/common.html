@@ -1,0 +1,88 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<!-- meta -->
+	<head th:fragment="common_meta">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<!-- lib -->
+	<head th:fragment="common_lib">
+		<!--  font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+		<!-- reset.css -->
+		<link rel="stylesheet" th:href="@{/common/css/reset.css}" />
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<!-- 共通css -->
+	<head th:fragment="common_css">
+		<link rel="stylesheet" th:href="@{/common/css/common.css}" />
+	</head>
+	<!-- 共通js -->
+	<head th:fragment="common_js">
+		<script th:src="@{/common/js/common.js}"></script>
+	</head>
+	<!-- 共通ヘッダ -->
+	<header th:fragment="common_header" id="header">
+				<div class="container">
+					<div class="row">
+						<a href ="/top" class="logo_txt col-xs-4">Nail Salon</a>
+						<div class="btn_box col-xs-5 col-xs-offset-3">
+							<button type="button" class="reserve btn btn-warning"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
+							<button type="button" class="login btn btn-success">ログイン</button>
+							<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"></i>
+						</div>
+					</div>
+	</header>
+	<!-- 共通フッダ -->
+	<div th:fragment="common_footer" id="fooder">
+			<a href="#">利用規約</a>
+			<a href="#">プライバシーポリシー</a>
+			<a href="#">会社概要</a>
+			<p>ⓒ2018 demo guri's nail salon</p>
+	</div>
+	<!-- 共通メニューバー -->
+	<div th:fragment="common_menu" id="nav_wrapper" class="container modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row modal-body">
+					<a class="nav_box col-xs-6" href="/top">
+						<i class="nav_icon fas fa-home fa-2x"></i>
+						<p class="nav_link gid_home">ホーム</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/design">
+						<i class="far fa-hand-paper fa-2x"></i>
+						<p class="nav_link gid_design">デザイン一覧</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/reserve">
+						<i class="far fa-calendar-alt fa-2x"></i>
+						<p class="nav_link gid_reserve">予約</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/confirm">
+						<i class="fas fa-check fa-2x"></i>
+						<p class="nav_link gid_confirm">予約確認</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/contact">
+						<i class="far fa-envelope fa-2x"></i>
+						<p class="nav_link gid_contact">問い合わせ</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/access">
+						<i class="fas fa-map-marked-alt fa-2x"></i>
+						<p class="nav_link gid_access">アクセス</p>
+					</a>
+					<a class="nav_box col-xs-6"  href="/login">
+						<i class="fas fa-sign-in-alt fa-2x"></i>
+						<p class="nav_link gid_login">ログイン</p>
+					</a>
+					<a class="nav_box col-xs-6" href="/logaut">
+						<i class="fas fa-sign-out-alt fa-2x"></i>
+						<p class="nav_link gid_logout">ログアウト</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>

@@ -4,18 +4,17 @@
 	<head>
 		<title>ネイルサロン予約サイト | デモページです</title>
 		<!-- 共通 -->
-		<meta th:include="common/common::load_common_meta">
-		<meta th:include="common/common::load_common_js" />
-		<meta th:include="common/common::load_common_css" />
-		<!-- 固有 -->
-
+		<meta th:include="common::common_meta">
+		<meta th:include="common::common_lib">
+		<meta th:include="common::common_js" />
+		<meta th:include="common::common_css" />
 	</head>
 	<body>
 		<!-- 共通ヘッダ -->
-		<div th:include="common/common::load_common_header"></div>
+		<div th:replace="common::common_header"></div>
 		<!-- メニューバー -->
-		<div th:include="common/common::load_common_menu"></div>
+		<div th:replace="common::common_menu"></div>
 		<!-- 共通フッダ -->
-		<div th:include="common/common::load_common_footer"></div>
+		<div th:replace="common::common_footer"></div>
 	</body>
 </html>
