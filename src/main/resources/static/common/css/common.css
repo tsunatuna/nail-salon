@@ -1,5 +1,23 @@
 @charset "UTF-8";
-/** カラーコード定義 */
+/** カラーコード定義
+  先頭
+    無印・・・中間
+    d_  ・・・暗め
+    l_  ・・・明るめ
+*/
+.btn-pink {
+  color: #ffffff;
+  background-color: #f99bd7;
+  border-color: #d46db7; }
+  .btn-pink:hover {
+    background-color: #d46db7; }
+
+.btn-long {
+  margin-top: 1.5em;
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 0.3em; }
+
 /** 共通 */
 body {
   background: linear-gradient(#bde2fb, #dbedfa) no-repeat;
@@ -12,17 +30,20 @@ h1 {
 h2 {
   font-size: 3.6rem;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 1.0em; }
 
 h3 {
   font-size: 2.4rem; }
+
+button {
+  font-size: 2.0rem; }
 
 p, a, tr, td, th, table, dl, dt, dd {
   font-size: 1.6rem; }
 
 article {
   text-align: center;
-  margin: 30px auto; }
+  margin: 1.0em auto; }
 
 /** 共通ヘッダ */
 #header {
@@ -30,36 +51,36 @@ article {
   z-index: 10;
   background: linear-gradient(#f99bd7, #fec48a) no-repeat;
   width: 100%;
-  height: 75px; }
+  height: 7.5em; }
   #header .logo_txt {
     font-family: Damion;
-    margin-top: 5px;
-    font-size: 4.0rem; }
+    font-size: 4.0rem;
+    margin-top: .25em; }
     #header .logo_txt:hover {
       text-decoration: none; }
   #header .btn_box {
     text-align: right; }
   #header .reserve, #header .login {
-    height: 40px;
-    width: 85px;
-    margin: 15px 5px; }
+    height: 3.0em;
+    width: 6.0em;
+    margin: .75em .5em; }
   #header .nav_humb {
     vertical-align: middle;
     font-size: 4.0rem;
-    margin: 5px; }
+    margin: .4em .25em; }
 
 .fix {
-  height: 75px; }
+  height: 7.5em; }
 
 /** 共通フッタ */
 #fooder {
   text-align: center;
+  padding: 1.0em 0;
   background-color: #fec48a; }
   #fooder a {
-    padding: 0 5px;
-    border-right: solid 1px #a5a5a5; }
+    padding: 0 .5em;
+    border-right: solid 0.1em #a5a5a5; }
   #fooder p {
-    padding-bottom: 10px;
     margin: 0 auto; }
 
 /** メニューバー*/
@@ -73,5 +94,3 @@ article {
     text-decoration: none; }
 #nav_wrapper .nav_link {
   margin-top: 10px; }
-
-/*# sourceMappingURL=common.css.map */

@@ -17,17 +17,3 @@
   width: 50%;
   font-weight: bold;
   letter-spacing: 0.3em; }
-
-#new_design {
-  text-align: center; }
-  #new_design .new_design_box {
-    margin: .75em auto; }
-    #new_design .new_design_box .genre {
-      background-color: #fcb7ce;
-      border-radius: 5px;
-      padding: 0 .25em;
-      margin-right: 2.0em;
-      display: inline-block; }
-
-#reserve, #information {
-  text-align: center; }

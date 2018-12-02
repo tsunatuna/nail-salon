@@ -1,4 +1,4 @@
-package com.project.nail;
+package com.project.nail.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

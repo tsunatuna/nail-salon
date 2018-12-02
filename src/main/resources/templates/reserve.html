@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>ネイルサロン予約サイト | 予約画面</title>
+		<!-- 共通 -->
+		<meta th:include="common::common_meta">
+		<meta th:include="common::common_lib">
+		<meta th:include="common::common_js" />
+		<meta th:include="common::common_css" />
+		<!-- 画面固有 -->
+		<link rel="stylesheet" th:href="@{/css/template.css}">
+	</head>
+	<body>
+		<!-- 共通ヘッダ -->
+		<div th:replace="common::common_header"></div>
+		<!-- メニューバー -->
+		<div th:replace="common::common_menu"></div>
+		<!-- 画面固有 -->
+    <div class="container">
+			<div class="row">
+        <main>
+          <article class="col-xs-12">
+            <h2>Info</h2>
+            <div id="confirm">
+              <p>直近の予約は12月3日（曜日）12：00～14：00です</p>
+              <button type="button" class="btn btn-pink btn-long">予約確認</button>
+            </div>
+          </article>
+					<article class="col-xs-12">
+            <h2>予約</h2>
+            <div id="reserve">
+              <p>2018年 6月</p>
+							<h1 style="background:#a5a5a5;height:500px">カレンダーライブラリ使う予定</h1>
+              <button type="button" class="btn btn-pink btn-long">予約する</button>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+		<!-- 共通フッダ -->
+		<div th:replace="common::common_footer"></div>
+	</body>
+</html>

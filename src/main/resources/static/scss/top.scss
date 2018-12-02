@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "../common/scss/style";
+// new Design
+#new_design {
+  text-align: center;
+  .new_design_box {
+    margin: .75em auto;
+    .genre {
+      background-color: $l_purple;
+      border-radius: 5px;
+      padding: 0 .25em;
+      margin-right: 2.0em;
+      display: inline-block;
+    }
+  }
+}
+
+#reserve, #information {
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.btn-pink {
+  color: $white;
+  background-color: $pink;
+  border-color: $d_pink;
+  &:hover {
+    background-color: $d_pink;
+  }
+}
+
+.btn-long {
+  margin-top: 1.5em;
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
