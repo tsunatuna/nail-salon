@@ -8,12 +8,155 @@
 		<meta th:include="common::common_lib">
 		<meta th:include="common::common_js" />
 		<meta th:include="common::common_css" />
+		<!-- 画面固有 -->
+		<link rel="stylesheet" th:href="@{/css/top.css}">
 	</head>
 	<body>
 		<!-- 共通ヘッダ -->
 		<div th:replace="common::common_header"></div>
 		<!-- メニューバー -->
 		<div th:replace="common::common_menu"></div>
+		<!-- 画面固有 -->
+		<div class="container">
+			<div class="row">
+				<img class="col-xs-12" th:src="@{/img/top_nav_01.png}" alt="トップ画像" />
+				<main>
+					<article class="col-xs-12">
+						<h2>日々を彩る</h2>
+						<p>普段のお仕事でも、お食事でも自分の手を見る機会は多いのではないでしょうか。そんなとき、手元が鮮やかだったら？少しだけうれしくなりませんか？見て明るい気持ちになれる。そんなネイルをお届けします。</p>
+					</article>
+					<article class="col-xs-12">
+						<h2>New Design</h2>
+						<!-- TODO Max4件取得(new_design_box にデザインIDを設定) -->
+						<div id="new_design">
+							<div class="col-xs-6">
+								<img th:src="@{/img/top_design_01.png}" alt="New Design1" />
+								<div class="new_design_box">
+									<p class="genre">シンプル</p>
+									<i class="favolite fa fa-heart fa-3x"></i>
+									<p>XXXXなデザインああああああ...</p>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<img th:src="@{/img/top_design_01.png}" alt="New Design1" />
+								<div class="new_design_box">
+									<p class="genre">シンプル</p>
+									<i class="favolite fa fa-heart fa-3x"></i>
+									<p>XXXXなデザインああああああ...</p>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<img th:src="@{/img/top_design_01.png}" alt="New Design1" />
+								<div class="new_design_box">
+									<p class="genre">シンプル</p>
+									<i class="favolite fa fa-heart fa-3x"></i>
+									<p>XXXXなデザインああああああ...</p>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<img th:src="@{/img/top_design_01.png}" alt="New Design1" />
+								<div class="new_design_box">
+									<p class="genre">シンプル</p>
+									<i class="favolite fa fa-heart fa-3x"></i>
+									<p>XXXXなデザインああああああ...</p>
+								</div>
+							</div>
+							<button type="button" class="btn_other_design btn btn-warning">ほかのデザインを見る</button>
+						</div>
+					</article>
+					<article class="col-xs-12">
+						<h2>Price</h2>
+						<!-- TODO 価格表をマスタから取得 -->
+						<table class="table table-striped">
+							<tr>
+								<td class="col-md-4">シンプル</td>
+								<td class="col-md-4">&yen;3,000-</td>
+								<td class="col-md-4">60分</td>
+							</tr>
+							<tr>
+								<td>カラフル</td>
+								<td>&yen;5,000-</td>
+								<td>120分</td>
+							</tr>
+							<tr>
+								<td>ゴージャス</td>
+								<td>&yen;7,000-</td>
+								<td>150分</td>
+							</tr>
+							<tr>
+								<td>オリジナル</td>
+								<td>ご相談</td>
+								<td>ご相談</td>
+							</tr>
+						</table>
+					</article>
+					<article class="col-xs-12">
+						<!-- TODO Max3件 新着情報をマスタから取得 -->
+						<h2>Information</h2>
+						<div id="information">
+							<dl>
+								<dt>2018-12-01</dt>
+								<dd>サイトリニューアルしました！</dd>
+								<dt>2018-11-11</dt>
+								<dd>今日はポッキーの日です！日頃の感謝とし...</dd>
+								<dt>2018-11-11</dt>
+								<dd>今日はポッキーの日です！日頃の感謝とし...</dd>
+							</dl>
+							<div>
+								<button type="button" class="btn_more_info btn btn-info">もっと見る</button>
+							</div>
+						</div>
+					</article>
+					<article class="col-xs-12">
+						<!-- TODO 直近1週間のマスタ取得後、整形(カレンダーに変更しよう！) -->
+						<h2>予約状況</h2>
+						<div id="reserve">
+							<table class="table table-striped">
+								<tr class="month">
+									<td class="col-md-4">12月</td>
+									<td class="col-md-4"></td>
+								</tr>
+								<tr class="day">
+									<td>27日</td>
+									<td>×</td>
+								</tr>
+								<tr class="day">
+									<td>28日</td>
+									<td>△</td>
+								</tr>
+								<tr class="day">
+									<td>29日</td>
+									<td>〇</td>
+								</tr>
+								<tr class="day">
+									<td>30日</td>
+									<td>休み</td>
+								</tr>
+								<tr class="day">
+									<td>31日</td>
+									<td>休み</td>
+								</tr>
+								<tr class="month">
+									<td>1月</td>
+									<td></td>
+								</tr>
+								<tr class="day">
+									<td>1日</td>
+									<td>休み</td>
+								</tr>
+								<tr class="day">
+									<td>2日</td>
+									<td>〇</td>
+								</tr>
+							</table>
+							<div>
+								<button type="button" class="btn_reserve btn btn-warning">予約する</button>
+							</div>
+						</div>
+					</article>
+				</main>
+			</div>
+		</div>
 		<!-- 共通フッダ -->
 		<div th:replace="common::common_footer"></div>
 	</body>

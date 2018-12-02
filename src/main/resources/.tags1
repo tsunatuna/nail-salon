@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+pink	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$pink: #f99bd7;$/;"	function	line:3
+orange	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$orange: #fec48a;$/;"	function	line:4
+purple	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$purple:#fcb7ce;$/;"	function	line:5
+blue	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$blue: #bde2fb;$/;"	function	line:6
+white	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$white: #dbedfa;$/;"	function	line:7
+glay	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^$glay: #a5a5a5;$/;"	function	line:8
+body	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^body {$/;"	function	line:11
+h1	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^h1 {$/;"	function	line:16
+h2	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^h2 {$/;"	function	line:19
+h3	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^h3 {$/;"	function	line:24
+p,a,tr,td,th,table,dl,dt,dd	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^p,a,tr,td,th,table,dl,dt,dd {$/;"	function	line:27
+article	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^article {$/;"	function	line:31
+#header	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^#header{$/;"	function	line:38
+.logo_txt	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.logo_txt {$/;"	function	line:44
+&:hover	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^		&:hover {$/;"	function	line:48
+.btn_box	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.btn_box {$/;"	function	line:52
+.reserve, .login	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.reserve, .login {$/;"	function	line:55
+.nav_humb	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.nav_humb {$/;"	function	line:60
+.fix	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^.fix {$/;"	function	line:68
+#fooder	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^#fooder {$/;"	function	line:72
+a	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	a {$/;"	function	line:76
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	p {$/;"	function	line:80
+#nav_wrapper	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^#nav_wrapper {$/;"	function	line:87
+.nav_box	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.nav_box {$/;"	function	line:89
+&:hover	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^		&:hover {$/;"	function	line:95
+.nav_link	C:\pleiades\workspace\nailSalonProject\src\main\resources\static\common\css\common.scss	/^	.nav_link {$/;"	function	line:99

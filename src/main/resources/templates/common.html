@@ -26,16 +26,20 @@
 		<script th:src="@{/common/js/common.js}"></script>
 	</head>
 	<!-- 共通ヘッダ -->
-	<header th:fragment="common_header" id="header">
-				<div class="container">
-					<div class="row">
-						<a href ="/top" class="logo_txt col-xs-4">Nail Salon</a>
-						<div class="btn_box col-xs-5 col-xs-offset-3">
-							<button type="button" class="reserve btn btn-warning"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
-							<button type="button" class="login btn btn-success">ログイン</button>
-							<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"></i>
-						</div>
+	<header th:fragment="common_header">
+		<div  id="header">
+			<div class="container">
+				<div class="row">
+					<a href ="/top" class="logo_txt col-xs-4">Nail Salon</a>
+					<div class="btn_box col-xs-5 col-xs-offset-3">
+						<button type="button" class="reserve btn btn-warning"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
+						<button type="button" class="login btn btn-success">ログイン</button>
+						<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"></i>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fix"></div>
 	</header>
 	<!-- 共通フッダ -->
 	<div th:fragment="common_footer" id="fooder">
