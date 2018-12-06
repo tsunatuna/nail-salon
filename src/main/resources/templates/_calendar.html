@@ -1,0 +1,11 @@
+<head th:fragment="calendario_css">
+  <link rel="stylesheet" th:href="@{/vendor/Calendario-master/css/calendar.css}" />
+  <link rel="stylesheet" th:href="@{/vendor/Calendario-master/css/custom_2.css}" />
+</head>
+<head th:fragment="calendario_js">
+  <script type="text/javascript" th:src="@{/vendor/Calendario-master/js/jquery.calendario.js}"></script>
+  <script type="text/javascript" th:src="@{/vendor/Calendario-master/js/data.js}"></script>
+  <script type="text/javascript" th:src="@{/js/calendar.js}"></script>
+</head>
+
+<div id="calendar" class="fc-calendar-container" th:fragment="calendario"></div>
