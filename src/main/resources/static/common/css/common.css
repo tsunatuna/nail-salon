@@ -38,7 +38,7 @@ h3 {
 button {
   font-size: 2.0rem; }
 
-p, a, tr, td, th, table, dl, dt, dd, span {
+p, a, tr, td, th, table, dl, dt, dd, span, label {
   font-size: 1.6rem; }
 
 article {
