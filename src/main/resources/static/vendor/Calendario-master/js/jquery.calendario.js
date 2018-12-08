@@ -36,10 +36,10 @@
           ...
       }
     */
-    weeks : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    weekabbrs : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    months : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    monthabbrs : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    weeks : ['日', '月', '火', '水', '木', '金', '土'],
+    weekabbrs : ['日', '月', '火', '水', '木', '金', '土'],
+    months : ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+    monthabbrs : ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
     displayWeekAbbr : false, // choose between values in options.weeks or options.weekabbrs
     displayMonthAbbr : false, // choose between values in options.months or options.monthabbrs
     startIn : 1, // left most day in the calendar (0 - Sunday, 1 - Monday, ... , 6 - Saturday)
@@ -364,6 +364,9 @@
     },
     getYear : function(){
       return this.year;
+    },
+    getYearName : function(){
+      return this.year + "年";
     },
     getMonth : function(){
       return this.month + 1;

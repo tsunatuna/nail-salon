@@ -8,8 +8,7 @@
 		<head th:include="common::common_js" />
 		<head th:include="common::common_css" />
 		<!-- 画面固有 -->
-		<head th:include="_calendar::calendario_js" />
-		<head th:include="_calendar::calendario_css" />
+		<head th:include="_pickadate::pickadate_css" />
 	</head>
 	<body>
 		<!-- 共通ヘッダ -->
@@ -29,20 +28,26 @@
           </article>
 					<article class="col-xs-12">
             <h2>予約</h2>
-            <div id="reserve">
-              <p>2018年 6月</p>
-							<!-- <h1 style="background:#a5a5a5;height:500px">カレンダーライブラリ使う予定</h1> -->
-							<div th:replace="_calendar::calendario"></div>
-              <button type="button" class="btn btn-pink btn-long">予約する</button>
-            </div>
+						<div class="section__block section__block--scoped">
+			      <fieldset class="fieldset fieldset--demo">
+			        <div class="fieldset__wrapper">
+			          <label> ■予約日　 </label></br>
+			          <input id='date' class="fieldset__input js__datepicker" type="text" placeholder="Try me&hellip;"></br></br>
+			          <label> ■予約時間　</label></br>
+			          <input id='time' class="fieldset__input js__datepicker" type="text" placeholder="Try me&hellip;"></br></br>
+			          <button id="submit" class="fieldset__button button button--small">予約</button>
+			        </div>
+			        <div id="result"></div>      <!-- ボタン押下の結果を表示する -->
+			      </fieldset>
+			    </div>
+						<button type="button" class="btn btn-pink btn-long">予約する</button>
           </article>
         </main>
       </div>
     </div>
 		<!-- 共通フッダ -->
 		<div th:replace="common::common_footer"></div>
-		<script type="text/javascript">
-			$('#calendar').calendario();
-		</script>
+		<!-- カレンダーライブラリ -->
+		<div th:replace="_pickadate::pickadate_js"></div>
 	</body>
 </html>

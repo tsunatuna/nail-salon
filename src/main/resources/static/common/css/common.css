@@ -38,7 +38,7 @@ h3 {
 button {
   font-size: 2.0rem; }
 
-p, a, tr, td, th, table, dl, dt, dd {
+p, a, tr, td, th, table, dl, dt, dd, span {
   font-size: 1.6rem; }
 
 article {
@@ -51,7 +51,9 @@ article {
   z-index: 10;
   background: linear-gradient(#f99bd7, #fec48a) no-repeat;
   width: 100%;
-  height: 7.5em; }
+  height: 10.0em;
+  display: flex;
+  align-items: center; }
   #header .logo_txt {
     font-family: Damion;
     font-size: 4.0rem;
@@ -70,12 +72,13 @@ article {
     margin: .4em .25em; }
 
 .fix {
-  height: 7.5em; }
+  height: 10.0em; }
 
 /** 共通フッタ */
 #fooder {
   text-align: center;
   padding: 1.0em 0;
+  margin-top: 5.0em;
   background-color: #fec48a; }
   #fooder a {
     padding: 0 .5em;
