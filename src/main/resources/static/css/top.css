@@ -12,11 +12,23 @@
   .btn-pink:hover {
     background-color: #d46db7; }
 
-.btn-long {
+.btn-w-50 {
   margin-top: 1.5em;
   width: 50%;
   font-weight: bold;
   letter-spacing: 0.3em; }
+
+.btn-w-80 {
+  margin-top: 1.5em;
+  width: 80%;
+  font-weight: bold;
+  letter-spacing: 0.3em; }
+
+.btn-w-100 {
+  margin-top: 1.5em;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.6em; }
 
 #new_design {
   text-align: center; }

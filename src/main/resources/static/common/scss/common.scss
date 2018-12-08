@@ -1,10 +1,16 @@
 @charset "utf-8";
 @import "style";
 /** 共通 */
+html {
+	//height: 100%;
+	//margin: 0;
+}
 body {
 	background: linear-gradient($blue, $l_blue) no-repeat;
 	font-size: 62.5%;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	height: 100%;
+	margin: 0;
 }
 h1 {
 	font-size: 4.0rem;
@@ -71,6 +77,10 @@ article {
 	padding: 1.0em 0;
 	margin-top: 5.0em;
 	background-color: $orange;
+	//最下部固定
+//	position: absolute;
+//	bottom: 0;
+//	width: 100%;
 	a {
 		padding: 0 .5em;
 		border-right: solid .1em $glay;

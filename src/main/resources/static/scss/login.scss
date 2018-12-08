@@ -1,0 +1,16 @@
+@charset "utf-8";
+.login_button_wrapper {
+  text-align: center;
+}
+/** 共通フッタ調整 */
+html, body {
+  height:100%;
+  margin: 0;
+}
+
+#fooder {
+	//最下部固定
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

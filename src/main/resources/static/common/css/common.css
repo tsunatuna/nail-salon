@@ -12,17 +12,31 @@
   .btn-pink:hover {
     background-color: #d46db7; }
 
-.btn-long {
+.btn-w-50 {
   margin-top: 1.5em;
   width: 50%;
   font-weight: bold;
   letter-spacing: 0.3em; }
 
+.btn-w-80 {
+  margin-top: 1.5em;
+  width: 80%;
+  font-weight: bold;
+  letter-spacing: 0.3em; }
+
+.btn-w-100 {
+  margin-top: 1.5em;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.6em; }
+
 /** 共通 */
 body {
   background: linear-gradient(#bde2fb, #dbedfa) no-repeat;
   font-size: 62.5%;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  height: 100%;
+  margin: 0; }
 
 h1 {
   font-size: 4.0rem; }
