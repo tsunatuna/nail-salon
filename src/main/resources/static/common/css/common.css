@@ -33,6 +33,7 @@
 /** 共通 */
 body {
   background: linear-gradient(#bde2fb, #dbedfa) no-repeat;
+  background-size: contain;
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   height: 100%;
@@ -104,7 +105,7 @@ article {
 #nav_wrapper .nav_box {
   text-align: center;
   margin: 10px auto;
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
   text-decoration: none; }
   #nav_wrapper .nav_box:hover {
