@@ -3,7 +3,6 @@ package com.project.nail.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.authentication.configuration.GlobalAuthenticationConfigurerAdapter;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -12,8 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.project.nail.framework.security.SampleAuthenticationFailureHandler;
-import com.project.nail.service.impl.UserDetailsServiceImpl;
+import com.project.nail.service.JdbcUserDetailsServiceImpl;
 
 /**
  * Spring Security設定クラス.
@@ -22,6 +20,9 @@ import com.project.nail.service.impl.UserDetailsServiceImpl;
 @EnableWebSecurity   // Spring Securityの基本設定
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+	@Autowired
+	private JdbcUserDetailsServiceImpl userDetailsService;
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
@@ -47,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.formLogin()
 			.loginProcessingUrl("/loginCheck")   // 認証処理のパス
 			.loginPage("/login")			// ログインフォームのパス
-			.failureHandler(new SampleAuthenticationFailureHandler())	   // 認証失敗時に呼ばれるハンドラクラス
+			.failureUrl("/login-error")
 			.defaultSuccessUrl("/top", false)	 // 認証成功時の遷移先
 			.usernameParameter("login_id").passwordParameter("login_password")  // ユーザー名、パスワードのパラメータ名
 			.and();
@@ -59,19 +60,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	}
 
-	@Configuration
-	protected static class AuthenticationConfiguration
-	extends GlobalAuthenticationConfigurerAdapter {
-		@Autowired
-		UserDetailsServiceImpl userDetailsService;
-
-		@Override
-		public void init(AuthenticationManagerBuilder auth) throws Exception {
-			// 認証するユーザーを設定する
-			auth.userDetailsService(userDetailsService)
-			// 入力値をbcryptでハッシュ化した値でパスワード認証を行う
-			.passwordEncoder(new BCryptPasswordEncoder());
-
-		}
+	@Autowired
+	public void configAuthentication(AuthenticationManagerBuilder auth)
+			throws Exception {
+		// 認証するユーザーを設定する
+		auth.userDetailsService(userDetailsService)
+		// 入力値をbcryptでハッシュ化した値でパスワード認証を行う
+		.passwordEncoder(new BCryptPasswordEncoder());
 	}
 }
