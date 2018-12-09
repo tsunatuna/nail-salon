@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+import com.project.nail.framework.security.LoginAuthenticationFailureHandler;
 import com.project.nail.service.JdbcUserDetailsServiceImpl;
 
 /**
@@ -45,10 +46,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.anyRequest().authenticated();  // それ以外は全て認証無しの場合アクセス不許可
 
 		// ログイン設定
-		http.formLogin()
+		http.formLogin() // ログインページに飛ばす
 			.loginProcessingUrl("/loginCheck")   // 認証処理のパス
 			.loginPage("/login")			// ログインフォームのパス
-			.failureUrl("/login-error")
+			// .failureUrl("?error")
+			.failureHandler(new LoginAuthenticationFailureHandler())		// 認証失敗時に呼ばれるハンドラクラス
 			.defaultSuccessUrl("/top", false)	 // 認証成功時の遷移先
 			.usernameParameter("login_id").passwordParameter("login_password")  // ユーザー名、パスワードのパラメータ名
 			.and();
@@ -56,7 +58,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		// ログアウト設定
 		http.logout()
 			.logoutRequestMatcher(new AntPathRequestMatcher("/logout**"))	   // ログアウト処理のパス
-			.logoutSuccessUrl("/top");										// ログアウト完了時のパス
+			.logoutSuccessUrl("/top").permitAll();										// ログアウト完了時のパス
 
 	}
 
