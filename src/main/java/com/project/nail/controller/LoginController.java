@@ -10,4 +10,15 @@ public class LoginController {
 		public String login() {
 			return "login";
 		}
+// AuthenticationFailureHandler実装クラスで処理
+//		// SpringConfigで設定したログインできなかった場合の処理を定義する
+//		@RequestMapping(value = "/login-error")
+//		public String loginError(Model model) {
+//			model.addAttribute("loginError", true);
+//			return "login";
+//	}
+//		@RequestMapping(value="/logout", method=RequestMethod.GET)
+//		public String logout() {
+//			return "top";
+//		}
 }
