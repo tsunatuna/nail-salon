@@ -37,7 +37,6 @@ public class LoginAuthenticationFailureHandler implements
 		}
 
 		// ログイン画面にリダイレクトする
-		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/"
-				+ httpServletRequest.getParameter("identifier") + "/index?error=" + errorId);
+		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login?error=" + errorId);
 	}
 }
