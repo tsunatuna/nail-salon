@@ -9,6 +9,9 @@ import javax.persistence.Table;
 
 import com.project.nail.entity.type.AuthoritiesId;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name="authorities")
 public class Authorities {
@@ -27,21 +30,4 @@ public class Authorities {
 	public Authorities(AuthoritiesId id){
 		this.id = id;
 	}
-
-	public AuthoritiesId getId() {
-		return id;
-	}
-
-	public void setId(AuthoritiesId id) {
-		this.id = id;
-	}
-
-	public Users getUser() {
-		return user;
-	}
-
-	public void setUser(Users user) {
-		this.user = user;
-	}
-
 }

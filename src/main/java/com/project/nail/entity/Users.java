@@ -16,6 +16,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.project.nail.service.MyUserDetail;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name="users")
 public class Users {
@@ -36,48 +39,6 @@ public class Users {
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	protected List<Authorities> authorities;
-
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public List<Authorities> getAuthorities() {
-		return authorities;
-	}
-
-	public void setAuthorities(List<Authorities> authorities) {
-		this.authorities = authorities;
-	}
-
-
-	public String getLoginId() {
-		return loginId;
-	}
-
-	public void setLoginId(String loginId) {
-		this.loginId = loginId;
-	}
 
 	/**
 	* {@link UserDetails}に変換します。
