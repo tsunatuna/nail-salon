@@ -31,10 +31,12 @@
 		<div  id="header">
 			<div class="container">
 				<div class="row">
-					<a href ="/top" class="logo_txt col-xs-4">Nail Salon</a>
-					<div class="btn_box col-xs-5 col-xs-offset-3">
-						<button type="button" class="reserve btn btn-warning" onclick="location.href='/reserve'"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
-						<button type="button" class="login btn btn-success" onclick="location.href='/login'">ログイン</button>
+					<div class="col-xs-10 col-sm-4">
+						<a href ="/top" class="logo_txt">Nail Salon</a>
+					</div>
+					<div class="btn_box col-xs-2 col-sm-5 col-sm-offset-3">
+						<button type="button" class="reserve btn btn-warning hidden-xs" onclick="location.href='/reserve'"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
+						<button type="button" class="login btn btn-success hidden-xs" onclick="location.href='/login'">ログイン</button>
 						<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"></i>
 					</div>
 				</div>
@@ -53,6 +55,11 @@
 	<div th:fragment="common_menu" id="nav_wrapper" class="modal fade" tabindex="-1">
 		<div class="modal-dialog">
 			<div class="modal-content">
+				<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 				<div class="row modal-body">
 					<a class="nav_box col-xs-6" th:href="@{'/top'}">
 						<i class="nav_icon fas fa-home fa-2x"></i>

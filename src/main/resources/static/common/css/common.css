@@ -37,6 +37,7 @@ body {
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   height: 100%;
+  width: 100vw;
   margin: 0; }
 
 h1 {
@@ -65,10 +66,13 @@ article {
   position: fixed;
   z-index: 10;
   background: linear-gradient(#f99bd7, #fec48a) no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 10.0em;
   display: flex;
   align-items: center; }
+  @media (max-width: 767px) {
+    #header {
+      display: inline-block; } }
   #header .logo_txt {
     font-family: Damion;
     font-size: 4.0rem;
