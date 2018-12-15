@@ -15,8 +15,9 @@
 		<div th:replace="common::common_header"></div>
 		<!-- メニューバー -->
 		<div th:replace="common::common_menu"></div>
-		<!-- 確認ダイアログ -->
+		<!-- ダイアログ -->
 		<div th:replace="_dialog::confirm_modal"></div>
+		<div th:replace="_dialog::result_modal"></div>
 		<!-- 画面固有 -->
 		<div class="container">
 			<div class="row">
@@ -25,18 +26,18 @@
 						<h2>Info</h2>
 						<div id="confirm">
 							<p>直近の予約は12月3日（曜日）12：00～14：00です</p>
-							<button type="button" class="btn btn-pink btn-w-50">予約確認</button>
+							<button type="button" class="btn btn-pink btn-w-50" onclick="location.href='/confirm'">予約確認</button>
 						</div>
 					</article>
 					<article class="col-xs-12">
 						<h2>予約</h2>
 						<div class="section__block section__block--scoped">
 							<form th:action="@{/reserve/register}" method="post" id="form_submit">
-								<div class="form-group col-xs-12 col-sm-6 col-sm-pull-3 col-sm-offset-6">
+								<div class="form-group col-sm-12 col-lg-6 col-lg-pull-3 col-lg-offset-6">
 									<label class="kome">予約日</label>
 									<input id="date" name="date" class="form-control js__datepicker" type="text">
 								</div>
-								<div class="form-group col-xs-12 col-sm-6 col-sm-pull-3 col-sm-offset-6">
+								<div class="form-group col-sm-12 col-lg-6 col-lg-pull-3 col-lg-offset-6">
 									<label class="kome">予約時間</label>
 									<input id="time" name="time" class="form-control js__datepicker" type="text">
 								</div>
@@ -55,5 +56,14 @@
 		<!-- カレンダーライブラリ -->
 		<div th:replace="_pickadate::pickadate_js"></div>
 		<script type="text/javascript" th:src="@{/js/reserve.js}"></script>
+		<script th:inline="javascript">
+			$(document).ready(function() {
+				// DBから取得したメッセージをjsに渡す
+				var msg = [[${msg}]];
+				if (!isEmpty(msg)) {
+					$('#result_modal').modal('show');
+				}
+			});
+		</script>
 	</body>
 </html>

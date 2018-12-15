@@ -11,14 +11,16 @@ function isEmpty(param) {
 
 // 入力フォームエラーチェック
 function errorMark($id, message) {
+  // リセット
+  $('#result').empty();
+  $id.css('background-color','#eee');
+  // エラー時
   if (isEmpty($id.val())) {
     $id.css('background-color','#ffb2c5');
-    $('#result').empty();
     $('#result').append('<div style="color:red"><p>' + message + 'を入力してください。</p></div>');
     return true;
   } else {
-    $id.css('background-color','#eee');
-    $('#result').empty();
+    // 正常時
     return false;
   }
 }

@@ -22,3 +22,26 @@
     </div>
   </div>
 </div>
+
+<!-- 完了ダイアログ -->
+<div th:fragment="result_modal">
+  <div class="modal fade" id="result_modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" style="display:inline" id="modal_title">予約完了</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p th:text="${msg}"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="location.href='/confirm'">予約確認画面へ</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

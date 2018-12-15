@@ -1,3 +1,8 @@
+/** 初期表示 */
+$(document).ready(function() {
+
+});
+
 //予約日
 const $date = $('#date');
 //予約時間
@@ -11,7 +16,7 @@ $('.btn_reserve').on('click', function(){
   }
 
   // 確認ダイアログ表示
-  $(confirm_modal).on('show.bs.modal', function () {
+  $('#confirm_modal').on('show.bs.modal', function () {
     let date = $date.val();
     let time = $time.val();
 
@@ -22,4 +27,6 @@ $('.btn_reserve').on('click', function(){
 
 $('.modal_submit').on('click', function () {
   $('#form_submit').submit();
+  $('#confirm_modal').modal('hide');
+  // TODO ローディング処理
 });
