@@ -1,0 +1,24 @@
+<!-- 確認ダイアログ -->
+<div th:fragment="confirm_modal">
+  <div class="modal fade" id="confirm_modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" style="display:inline" id="modal_title">予約</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>以下の内容で予約します。</p>
+          <p>予約日　：<span class="modal_param_date"></span></p>
+          <p>予約時間：<span class="modal_param_time"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          <button type="button" class="btn btn-primary modal_submit">予約する</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
