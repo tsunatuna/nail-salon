@@ -1,0 +1,15 @@
+INSERT
+INTO NAILSALON.USERS(
+  USER_ID
+  , LOGIN_ID
+  , PASSWORD
+  , DISPLAY_NAME
+  , ENABLED
+)
+VALUES (
+  100001
+  , 'admin'
+  , '$2a$10$rTN0ynqV6KHfCJS8jAtOjeDVzHssRvq0Xl076oJTQa.HTRnAMPkSG'
+  , 'アドミン'
+  , 1
+) ;

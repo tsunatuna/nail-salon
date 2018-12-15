@@ -4,39 +4,31 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^<html xmlns:th="http:\/\/www.thymeleaf.org">$/;"	function	line:2
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^	<head>$/;"	function	line:3
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_meta" \/>$/;"	function	line:5
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_lib" \/>$/;"	function	line:6
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_js" \/>$/;"	function	line:7
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_css" \/>$/;"	function	line:8
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="_pickadate::pickadate_css" \/>$/;"	function	line:10
-link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<link rel="stylesheet" th:href="@{\/css\/reserve.css}" \/>$/;"	function	line:11
-body	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^	<body>$/;"	function	line:13
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_header"><\/div>$/;"	function	line:15
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_menu"><\/div>$/;"	function	line:17
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="_dialog::confirm_modal"><\/div>$/;"	function	line:19
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div class="container">$/;"	function	line:21
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^			<div class="row">$/;"	function	line:22
-main	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^				<main>$/;"	function	line:23
-article	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^					<article class="col-xs-12">$/;"	function	line:24
-h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<h2>Info<\/h2>$/;"	function	line:25
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<div id="confirm">$/;"	function	line:26
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<p>直近の予約は12月3日（曜日）12：00～14：00です<\/p>$/;"	function	line:27
-button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<button type="button" class="btn btn-pink btn-w-50">予約確認<\/button>$/;"	function	line:28
-article	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^					<article class="col-xs-12">$/;"	function	line:31
-h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<h2>予約<\/h2>$/;"	function	line:32
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<div class="section__block section__block--scoped">$/;"	function	line:33
-form	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<form th:action="@{\/reserve\/register}" method="post" id="form_submit">$/;"	function	line:34
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group col-xs-12 col-sm-6 col-sm-pull-3 col-sm-offset-6">$/;"	function	line:35
-label	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<label class="kome">予約日<\/label>$/;"	function	line:36
-input	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<input id="date" name="date" class="form-control js__datepicker" type="text">$/;"	function	line:37
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group col-xs-12 col-sm-6 col-sm-pull-3 col-sm-offset-6">$/;"	function	line:39
-label	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<label class="kome">予約時間<\/label>$/;"	function	line:40
-input	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<input id="time" name="time" class="form-control js__datepicker" type="text">$/;"	function	line:41
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group col-xs-12">$/;"	function	line:43
-button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<button type="button" class="btn btn-pink btn-w-50 btn_reserve" data-toggle="modal" data-target="#confirm_modal">予約する<\/button>$/;"	function	line:44
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div id="result"><\/div>			<!-- ボタン押下の結果を表示する -->$/;"	function	line:46
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_footer"><\/div>$/;"	function	line:54
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="_pickadate::pickadate_js"><\/div>$/;"	function	line:56
-script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<script type="text\/javascript" th:src="@{\/js\/reserve.js}"><\/script>$/;"	function	line:57
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^<div th:fragment="confirm_modal">$/;"	function	line:2
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^  <div class="modal fade" id="confirm_modal" tabindex="-1">$/;"	function	line:3
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^    <div class="modal-dialog modal-dialog-centered">$/;"	function	line:4
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^      <div class="modal-content">$/;"	function	line:5
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-header">$/;"	function	line:6
+h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <h3 class="modal-title" style="display:inline" id="modal_title">予約<\/h3>$/;"	function	line:7
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="close" data-dismiss="modal" aria-label="Close">$/;"	function	line:8
+span	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^            <span aria-hidden="true">&times;<\/span>$/;"	function	line:9
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-body">$/;"	function	line:12
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <p>以下の内容で予約します。<\/p>$/;"	function	line:13
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <p>予約日　：<span class="modal_param_date"><\/span><\/p>$/;"	function	line:14
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <p>予約時間：<span class="modal_param_time"><\/span><\/p>$/;"	function	line:15
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-footer">$/;"	function	line:17
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる<\/button>$/;"	function	line:18
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="btn btn-primary modal_submit">予約する<\/button>$/;"	function	line:19
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^<div th:fragment="result_modal">$/;"	function	line:27
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^  <div class="modal fade" id="result_modal" tabindex="-1">$/;"	function	line:28
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^    <div class="modal-dialog modal-dialog-centered">$/;"	function	line:29
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^      <div class="modal-content">$/;"	function	line:30
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-header">$/;"	function	line:31
+h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <h3 class="modal-title" style="display:inline" id="modal_title">予約完了<\/h3>$/;"	function	line:32
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="close" data-dismiss="modal" aria-label="Close">$/;"	function	line:33
+span	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^            <span aria-hidden="true">&times;<\/span>$/;"	function	line:34
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-body">$/;"	function	line:37
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <p th:text="${msg}"><\/p>$/;"	function	line:38
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^        <div class="modal-footer">$/;"	function	line:40
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="btn btn-primary" onclick="location.href='\/reserve\/confirm'">予約確認画面へ<\/button>$/;"	function	line:41
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\_dialog.html	/^          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる<\/button>$/;"	function	line:42

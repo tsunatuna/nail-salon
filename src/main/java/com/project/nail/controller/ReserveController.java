@@ -32,6 +32,12 @@ public class ReserveController {
 		return "reserve";
 	}
 
+	@GetMapping("confirm")
+	public String confirmReserve() {
+
+		return "confirm";
+	}
+
 	@PostMapping("register")
 	public String  registerReserve(@AuthenticationPrincipal MyUserDetail userDetail, @ModelAttribute ReserveBean reserveBean, RedirectAttributes attributes) throws ParseException {
 
