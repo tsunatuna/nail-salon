@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.project.nail.service.MyUserDetail;
+import com.project.nail.service.user.MyUserDetail;
 
 import lombok.Data;
 

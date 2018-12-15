@@ -12,7 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.project.nail.framework.security.LoginAuthenticationFailureHandler;
-import com.project.nail.service.JdbcUserDetailsServiceImpl;
+import com.project.nail.service.user.JdbcUserDetailsServiceImpl;
 
 /**
  * Spring Security設定クラス.

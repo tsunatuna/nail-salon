@@ -1,4 +1,4 @@
-package com.project.nail.service;
+package com.project.nail.service.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

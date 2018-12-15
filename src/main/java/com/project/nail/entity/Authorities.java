@@ -17,7 +17,7 @@ import lombok.Data;
 public class Authorities {
 
 	@Id
-	private com.project.nail.entity.type.AuthoritiesId id;
+	private AuthoritiesId id;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id", insertable = false, updatable = false)

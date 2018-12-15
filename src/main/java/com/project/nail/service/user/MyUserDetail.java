@@ -1,4 +1,4 @@
-package com.project.nail.service;
+package com.project.nail.service.user;
 
 import java.util.ArrayList;
 import java.util.Collection;
