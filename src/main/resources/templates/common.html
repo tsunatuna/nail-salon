@@ -1,4 +1,4 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 	<!-- meta -->
 	<head th:fragment="common_meta">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,12 +31,16 @@
 		<div  id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-10 col-sm-4">
+					<div class="col-xs-6 col-sm-4">
 						<a href ="/top" class="logo_txt">Nail Salon</a>
-					</div>
-					<div class="btn_box col-xs-2 col-sm-5 col-sm-offset-3">
+				</div>
+					<div class="btn_box col-xs-6 col-sm-5 col-sm-offset-3">
+						<div sec:authorize="isAuthenticated()" class="user_name">
+							<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+							<p sec:authentication="name"></p>
+						</div>
 						<button type="button" class="reserve btn btn-warning hidden-xs" onclick="location.href='/reserve'"><i class="fa fa-bell" style="padding-right:10px"></i>予約</button>
-						<button type="button" class="login btn btn-success hidden-xs" onclick="location.href='/login'">ログイン</button>
+						<button sec:authorize="!isAuthenticated()" type="button" class="login btn btn-success hidden-xs" onclick="location.href='/login'">ログイン</button>
 						<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"></i>
 					</div>
 				</div>
@@ -69,14 +73,16 @@
 						<i class="far fa-hand-paper fa-2x"></i>
 						<p class="nav_link gid_design">デザイン一覧</p>
 					</a>
-					<a class="nav_box col-xs-6" th:href="@{'reserve'}">
+					<a class="nav_box col-xs-6" th:href="@{'/reserve'}">
 						<i class="far fa-calendar-alt fa-2x"></i>
 						<p class="nav_link gid_reserve">予約</p>
 					</a>
-					<a class="nav_box col-xs-6" th:href="@{'/reserve/confirm'}">
-						<i class="fas fa-check fa-2x"></i>
-						<p class="nav_link gid_confirm">予約確認</p>
-					</a>
+					<div sec:authorize="isAuthenticated()">
+						<a class="nav_box col-xs-6" th:href="@{'/reserve/confirm'}">
+							<i class="fas fa-check fa-2x"></i>
+							<p class="nav_link gid_confirm">予約確認</p>
+						</a>
+					</div>
 					<a class="nav_box col-xs-6" th:href="@{'/contact'}">
 						<i class="far fa-envelope fa-2x"></i>
 						<p class="nav_link gid_contact">問い合わせ</p>
@@ -89,10 +95,18 @@
 						<i class="fas fa-sign-in-alt fa-2x"></i>
 						<p class="nav_link gid_login">ログイン</p>
 					</a>
-					<a class="nav_box col-xs-6" th:href="@{'/logout'}">
-						<i class="fas fa-sign-out-alt fa-2x"></i>
-						<p class="nav_link gid_logout">ログアウト</p>
-					</a>
+					<div sec:authorize="isAuthenticated()">
+						<a class="nav_box col-xs-6" th:href="@{'/logout'}">
+							<i class="fas fa-sign-out-alt fa-2x"></i>
+							<p class="nav_link gid_logout">ログアウト</p>
+						</a>
+					</div>
+					<div sec:authorize="hasRole('ROLE_ADMIN')">
+						<a class="nav_box col-xs-6" th:href="@{'/admin/top'}">
+							<i class="fas fa-space-shuttle fa-2x"></i>
+							<p class="nav_link gid_logout">管理画面</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

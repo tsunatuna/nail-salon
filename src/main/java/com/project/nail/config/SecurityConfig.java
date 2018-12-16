@@ -43,6 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		// 認可の設定
 		http.authorizeRequests()
 			.antMatchers("/", "/login", "/top", "/design", "/contact", "/access").permitAll() // indexは全ユーザーアクセス許可
+			.antMatchers("/admin/**").hasRole("ADMIN") // 管理者
 			.anyRequest().authenticated();  // それ以外は全て認証無しの場合アクセス不許可
 
 		// ログイン設定
@@ -53,12 +54,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.failureHandler(new LoginAuthenticationFailureHandler())		// 認証失敗時に呼ばれるハンドラクラス
 			.defaultSuccessUrl("/top", false)	 // 認証成功時の遷移先
 			.usernameParameter("login_id").passwordParameter("login_password")  // ユーザー名、パスワードのパラメータ名
-			.and();
+			.and()
+			.rememberMe();
 
 		// ログアウト設定
 		http.logout()
 			.logoutRequestMatcher(new AntPathRequestMatcher("/logout**"))	   // ログアウト処理のパス
-			.logoutSuccessUrl("/top").permitAll();										// ログアウト完了時のパス
+			.logoutSuccessUrl("/top").permitAll()										// ログアウト完了時のパス
+			.deleteCookies("JSESSIONID") // ログアウト時、cookieのJSESSIONIDを削除
+			.invalidateHttpSession(true);
 
 	}
 

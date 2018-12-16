@@ -89,6 +89,13 @@ article {
     vertical-align: middle;
     font-size: 4.0rem;
     margin: .4em .25em; }
+  #header .user_name {
+    display: inline-block;
+    height: 3.0em;
+    margin: .75em .5em; }
+    #header .user_name p, #header .user_name i {
+      display: inline;
+      font-size: 2.0rem; }
 
 .fix {
   height: 10.0em; }

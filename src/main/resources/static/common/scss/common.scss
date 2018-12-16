@@ -71,6 +71,16 @@ article {
 		font-size: 4.0rem;
 		margin: .4em .25em;
 	}
+	.user_name {
+		display: inline-block;
+		height: 3.0em;
+		margin: .75em .5em;
+		p, i{
+			display: inline;
+			font-size: 2.0rem;
+
+		}
+	}
 }
 //固定ヘッダ用の空div
 .fix {
