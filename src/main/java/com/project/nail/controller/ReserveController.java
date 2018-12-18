@@ -59,7 +59,7 @@ public class ReserveController {
 		reserve.setReservedTime(reservedTime);
 
 		reserveService.save(reserve);
-		attributes.addFlashAttribute("msg", "登録が完了しました！");
+		attributes.addFlashAttribute("msg", "予約が完了しました！");
 		return "redirect:/reserve";
 	}
 

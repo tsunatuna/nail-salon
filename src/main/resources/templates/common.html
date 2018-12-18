@@ -91,10 +91,12 @@
 						<i class="fas fa-map-marked-alt fa-2x"></i>
 						<p class="nav_link gid_access">アクセス</p>
 					</a>
-					<a class="nav_box col-xs-6"  th:href="@{'/login'}">
-						<i class="fas fa-sign-in-alt fa-2x"></i>
-						<p class="nav_link gid_login">ログイン</p>
-					</a>
+					<div sec:authorize="!isAuthenticated()">
+						<a class="nav_box col-xs-6"  th:href="@{'/login'}">
+							<i class="fas fa-sign-in-alt fa-2x"></i>
+							<p class="nav_link gid_login">ログイン</p>
+						</a>
+					</div>
 					<div sec:authorize="isAuthenticated()">
 						<a class="nav_box col-xs-6" th:href="@{'/logout'}">
 							<i class="fas fa-sign-out-alt fa-2x"></i>

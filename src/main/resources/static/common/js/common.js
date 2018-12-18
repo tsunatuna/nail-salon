@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 // 入力チェック
 function isEmpty(param) {
-  let flg = param == "" || param.length == 0 || param === undefined || param == null ? true : false
+  let flg = param == "" || param == null || param == 0 || param === undefined ? true : false
   return flg;
 }
 
