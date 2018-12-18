@@ -4,72 +4,42 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^<html xmlns:th="http:\/\/www.thymeleaf.org" xmlns:sec="http:\/\/www.thymeleaf.org\/thymeleaf-extras-springsecurity4">$/;"	function	line:1
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<head th:fragment="common_meta">$/;"	function	line:3
-meta	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<meta http-equiv="X-UA-Compatible" content="IE=edge">$/;"	function	line:4
-meta	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<meta charset="utf-8">$/;"	function	line:5
-meta	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<meta name="viewport" content="width=device-width, initial-scale=1">$/;"	function	line:6
-title	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<title>ネイルサロン予約サイト（デモページ）| XXXX画面<\/title>$/;"	function	line:7
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<head th:fragment="common_lib">$/;"	function	line:10
-link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<link rel="stylesheet" href="https:\/\/use.fontawesome.com\/releases\/v5.5.0\/css\/all.css" \/>$/;"	function	line:12
-link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<link rel="stylesheet" th:href="@{\/common\/css\/reset.css}" \/>$/;"	function	line:14
-script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<script src="https:\/\/code.jquery.com\/jquery-3.3.1.min.js" integrity="sha256-FgpCb\/KJQlLNfOu91ta32o\/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"><\/script>$/;"	function	line:16
-link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<link rel="stylesheet" href="https:\/\/maxcdn.bootstrapcdn.com\/bootstrap\/3.3.7\/css\/bootstrap.min.css" \/>$/;"	function	line:18
-script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<script src="https:\/\/stackpath.bootstrapcdn.com\/bootstrap\/3.3.7\/js\/bootstrap.min.js"><\/script>$/;"	function	line:19
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<head th:fragment="common_css">$/;"	function	line:22
-link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<link rel="stylesheet" th:href="@{\/common\/css\/common.css}" \/>$/;"	function	line:23
-head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<head th:fragment="common_js">$/;"	function	line:26
-script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<script th:src="@{\/common\/js\/common.js}"><\/script>$/;"	function	line:27
-header	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<header th:fragment="common_header">$/;"	function	line:30
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<div  id="header">$/;"	function	line:31
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<div class="container">$/;"	function	line:32
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<div class="row">$/;"	function	line:33
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<div class="col-xs-10 col-sm-4">$/;"	function	line:34
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<a href ="\/top" class="logo_txt">Nail Salon<\/a>$/;"	function	line:35
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<sec:authorize access="hasRole('ROLE_ADMIN')">アドミン権限 |<\/sec:authorize>$/;"	function	line:37
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^        <sec:authorize access="hasRole('ROLE_USER')">ユーザ権限 |<\/sec:authorize>$/;"	function	line:38
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<sec:authorize access="isAuthenticated()">あどみん |<\/sec:authorize>$/;"	function	line:39
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<sec:authentication access="principal.username"><\/sec:authorize>$/;"	function	line:40
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<sec:authentication access="principal.login_id"><\/sec:authorize>$/;"	function	line:41
-sec	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<sec:authentication access="principal.authorities"><\/sec:authorize>$/;"	function	line:42
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<div class="btn_box col-xs-2 col-sm-5 col-sm-offset-3">$/;"	function	line:43
-button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<button type="button" class="reserve btn btn-warning hidden-xs" onclick="location.href='\/reserve'"><i class="fa fa-bell" style="padding-right:10px"><\/i>予約<\/button>$/;"	function	line:44
-button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<button type="button" class="login btn btn-success hidden-xs" onclick="location.href='\/login'">ログイン<\/button>$/;"	function	line:45
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="nav_humb fa fa-bars" data-toggle="modal" data-target="#nav_wrapper"><\/i>$/;"	function	line:46
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<div class="fix"><\/div>$/;"	function	line:51
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<div th:fragment="common_footer" id="fooder">$/;"	function	line:54
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<a href="#">利用規約<\/a>$/;"	function	line:55
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<a href="#">プライバシーポリシー<\/a>$/;"	function	line:56
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<a href="#">会社概要<\/a>$/;"	function	line:57
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<p>ⓒ2018 demo guri's nail salon<\/p>$/;"	function	line:58
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^	<div th:fragment="common_menu" id="nav_wrapper" class="modal fade" tabindex="-1">$/;"	function	line:61
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^		<div class="modal-dialog">$/;"	function	line:62
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^			<div class="modal-content">$/;"	function	line:63
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<div class="modal-header">$/;"	function	line:64
-button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^          <button type="button" class="close" data-dismiss="modal" aria-label="Close">$/;"	function	line:65
-span	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^            <span aria-hidden="true">&times;<\/span>$/;"	function	line:66
-div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^				<div class="row modal-body">$/;"	function	line:69
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/top'}">$/;"	function	line:70
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="nav_icon fas fa-home fa-2x"><\/i>$/;"	function	line:71
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_home">ホーム<\/p>$/;"	function	line:72
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/design'}">$/;"	function	line:74
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="far fa-hand-paper fa-2x"><\/i>$/;"	function	line:75
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_design">デザイン一覧<\/p>$/;"	function	line:76
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'reserve'}">$/;"	function	line:78
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="far fa-calendar-alt fa-2x"><\/i>$/;"	function	line:79
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_reserve">予約<\/p>$/;"	function	line:80
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/reserve\/confirm'}">$/;"	function	line:82
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="fas fa-check fa-2x"><\/i>$/;"	function	line:83
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_confirm">予約確認<\/p>$/;"	function	line:84
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/contact'}">$/;"	function	line:86
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="far fa-envelope fa-2x"><\/i>$/;"	function	line:87
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_contact">問い合わせ<\/p>$/;"	function	line:88
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/access'}">$/;"	function	line:90
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="fas fa-map-marked-alt fa-2x"><\/i>$/;"	function	line:91
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_access">アクセス<\/p>$/;"	function	line:92
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6"  th:href="@{'\/login'}">$/;"	function	line:94
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="fas fa-sign-in-alt fa-2x"><\/i>$/;"	function	line:95
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_login">ログイン<\/p>$/;"	function	line:96
-a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^					<a class="nav_box col-xs-6" th:href="@{'\/logout'}">$/;"	function	line:98
-i	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<i class="fas fa-sign-out-alt fa-2x"><\/i>$/;"	function	line:99
-p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\common.html	/^						<p class="nav_link gid_logout">ログアウト<\/p>$/;"	function	line:100
+html	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^<html xmlns:th="http:\/\/www.thymeleaf.org">$/;"	function	line:2
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^	<head>$/;"	function	line:3
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_meta" \/>$/;"	function	line:5
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_lib" \/>$/;"	function	line:6
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_js" \/>$/;"	function	line:7
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="common::common_css" \/>$/;"	function	line:8
+head	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<head th:include="_pickadate::pickadate_css" \/>$/;"	function	line:10
+link	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<link rel="stylesheet" th:href="@{\/css\/reserve.css}" \/>$/;"	function	line:11
+body	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^	<body>$/;"	function	line:13
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_header"><\/div>$/;"	function	line:15
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_menu"><\/div>$/;"	function	line:17
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="_dialog::confirm_modal"><\/div>$/;"	function	line:19
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="_dialog::result_modal"><\/div>$/;"	function	line:20
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div class="container">$/;"	function	line:22
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^			<div class="row">$/;"	function	line:23
+main	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^				<main>$/;"	function	line:24
+article	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^					<article class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">$/;"	function	line:25
+h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<h2>Info<\/h2>$/;"	function	line:26
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<div id="confirm">$/;"	function	line:27
+p	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<p>直近の予約は12月3日（曜日）12：00～14：00です<\/p>$/;"	function	line:28
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<button type="button" class="btn btn-pink btn-w-100" onclick="location.href='\/reserve\/confirm'">予約確認<\/button>$/;"	function	line:29
+article	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^					<article class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">$/;"	function	line:32
+h	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<h2>予約<\/h2>$/;"	function	line:33
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^						<div class="section__block section__block--scoped">$/;"	function	line:34
+form	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^							<form th:action="@{\/reserve\/register}" method="post" id="form_submit">$/;"	function	line:35
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group">$/;"	function	line:36
+label	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<label class="kome">予約日<\/label>$/;"	function	line:37
+input	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<input id="date" name="reservedDate" class="form-control js__datepicker" type="text">$/;"	function	line:38
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group">$/;"	function	line:40
+label	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<label class="kome">予約時間<\/label>$/;"	function	line:41
+input	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<input id="time" name="reservedTime" class="form-control js__datepicker" type="text">$/;"	function	line:42
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div class="form-group">$/;"	function	line:44
+a	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<a th:href="@{\/design}">★あらかじめデザインも決める★<\/a>$/;"	function	line:45
+button	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^									<button type="button" class="btn btn-pink btn-w-100 btn_reserve col-xs-6" data-toggle="modal" data-target="#confirm_modal">予約する<\/button>$/;"	function	line:46
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^								<div id="result"><\/div>			<!-- ボタン押下の結果を表示する -->$/;"	function	line:48
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="common::common_footer"><\/div>$/;"	function	line:56
+div	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<div th:replace="_pickadate::pickadate_js"><\/div>$/;"	function	line:58
+script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<script type="text\/javascript" th:src="@{\/js\/reserve.js}"><\/script>$/;"	function	line:59
+script	C:\pleiades\workspace\nailSalonProject\src\main\resources\templates\reserve.html	/^		<script th:inline="javascript">$/;"	function	line:60

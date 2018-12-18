@@ -17,15 +17,16 @@ $('.btn_reserve').on('click', function(){
 
   // 確認ダイアログ表示
   $('#confirm_modal').on('show.bs.modal', function () {
-    let date = $date.val();
-    let time = $time.val();
+    let time = $date.val();
+    let reservedTime = $time.val();
 
-    $(this).find('.modal_param_date').text(date);
-    $(this).find('.modal_param_time').text(time);
+    $(this).find('.modal_param_date').text($date.val());
+    $(this).find('.modal_param_time').text($time.val());
   });
 });
 
 $('.modal_submit').on('click', function () {
+  $time.val($time.val() + ":00");
   $('#form_submit').submit();
   $('#confirm_modal').modal('hide');
   // TODO ローディング処理

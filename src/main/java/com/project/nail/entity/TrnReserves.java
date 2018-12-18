@@ -1,35 +1,48 @@
 package com.project.nail.entity;
 
+import java.io.Serializable;
 import java.sql.Time;
-import java.sql.Timestamp;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+/**
+ * 予約情報エンティティ
+ * @author igaguri
+ */
 @Data
+@EqualsAndHashCode(callSuper = false)
 @Entity
-public class TrnReserves {
+public class TrnReserves extends AbstractEntity implements Serializable {
 
 	@Id
-	// 予約ID
+	/** 予約ID */
 	private String reservedId;
-	// デザインID
+	/** デザインID */
 	private String designId;
-	// ユーザID
+	/** ユーザID */
 	private int userId;
-	// 予約日
+	/** 予約日 */
 	private Date reservedDate;
-	// 予約開始時間
-	private Time reservedStartTime;
-	//予約終了時間
-	private Time reservedEndTime;
-	//登録日時
-	private Timestamp createdDate;
-	// 更新日時
-	private Timestamp updatedDate;
-	// 削除フラグ
-	private int isDeleted;
+	/** 予約開始時間 */
+	private Time reservedTime;
+
+	/**
+	 * コンストラクタ
+	 */
+	public TrnReserves() {
+
+	}
+
+	public TrnReserves(String reservedId, String designId, int userId, Date reservedDate, Time reservedTime) {
+		this.reservedId = reservedId;
+		this.designId = designId;
+		this.userId = userId;
+		this.reservedDate = reservedDate;
+		this.reservedTime = reservedTime;
+	}
 }

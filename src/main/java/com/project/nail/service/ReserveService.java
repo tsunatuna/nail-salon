@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.project.nail.Repository.ReserveRepository;
-import com.project.nail.entity.Reserve;
+import com.project.nail.entity.TrnReserves;
 
 @Service
 public class ReserveService {
@@ -15,19 +15,19 @@ public class ReserveService {
 	@Autowired
 	private ReserveRepository reserveRepository;
 
-	public List<Reserve> findAll() {
+	public List<TrnReserves> findAll() {
 		return reserveRepository.findAll();
 	}
 
-	public Optional<Reserve> findById(String id) {
-		return reserveRepository.findById(id);
+	public Optional<TrnReserves> findById(String reservedId) {
+		return reserveRepository.findById(reservedId);
 	}
 
-	public Reserve save(Reserve reserve) {
-		return reserveRepository.save(reserve);
+	public TrnReserves save(TrnReserves trnReserves) {
+		return reserveRepository.save(trnReserves);
 	}
 
-	public void delete(String id) {
-		reserveRepository.deleteById(id);
+	public void delete(String reservedId) {
+		reserveRepository.deleteById(reservedId);
 	}
 }
